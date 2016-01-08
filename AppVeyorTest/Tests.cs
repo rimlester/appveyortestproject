@@ -8,11 +8,13 @@ using Xunit;
 
 namespace AppVeyorTest
 {
-    public class Program
+    public class Tests
     {
-        static void Main(string[] args)
-        {
 
+        [Fact]
+        public void OddNumbersAreOdd()
+        {
+            new Code().EmitOdd().ToList().ForEach(x => (x % 2).Should().Be(1));
         }
     }
 }
