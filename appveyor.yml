@@ -1,2 +1,6 @@
 before_build:
   - nuget restore
+after_build:
+  - cmd: >
+    cd c:\inetpub\wwwroot
+    dir
