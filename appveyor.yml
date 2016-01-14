@@ -4,4 +4,4 @@ before_build:
 after_build:
   -  cmd: cd c:\inetpub\wwwroot
   -  cmd: dir
-  -  cmd: msbuild TestingDeploy.xml /p:Configuration=Deploy;SolutionName=AppVeyor;ProjectName=TestWeb
+  -  cmd: msbuild TestingDeploy.xml /p:Configuration=Deploy;SolutionName=AppVeyor;ProjectName=TestWeb/TestWeb
