@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
     <ProjectFile Condition=" '$(ProjectFile)' == '' ">$(ProjectName)\$(ProjectName).csproj</ProjectFile>
-    <DeployServiceUrl Condition=" '$(DeployServiceUrl)' == '' ">http://staging-server/MSDeployAgentService</DeployServiceUrl>
+    <DeployServiceUrl Condition=" '$(DeployServiceUrl)' == '' ">C:\inetpub\wwwroot</DeployServiceUrl>
   </PropertyGroup>
 
   <Target Name="VerifyProperties">
