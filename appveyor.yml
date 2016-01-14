@@ -2,6 +2,6 @@ before_build:
   - nuget restore
 
 after_build:
-  -  cmd: msbuild TestingDeploy.xml /p:Configuration=Deploy;SolutionName=AppVeyor;ProjectName=TestWeb/TestWeb
+  -  cmd: msbuild TestingDeploy.xml /p:Configuration=Deploy;SolutionName=AppVeyor;ProjectName=TestWeb
   -  cmd: cd c:\inetpub\wwwroot
   -  cmd: dir
