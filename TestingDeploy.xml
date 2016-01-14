@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
     <ProjectFile Condition=" '$(ProjectFile)' == '' ">$(ProjectName)\$(ProjectName).csproj</ProjectFile>
-    <DeployIisAppPath Condition=" '$(DeployServiceUrl)' == '' ">myapp</DeployIisAppPath>
+    <DeployServiceUrl>localhost</DeployServiceUrl>
   </PropertyGroup>
 
   <Target Name="VerifyProperties">
