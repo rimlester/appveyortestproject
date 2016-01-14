@@ -5,6 +5,6 @@ before_build:
   - nuget restore
 
 after_build:
-  -  cmd: msbuild AppVeyor.sln /p:Configuration=Deploy;SolutionName=AppVeyor;ProjectName=TestWeb;OutputPath=C:\inetpub\wwwroot;Platform="Any CPU"
+  -  cmd: msbuild AppVeyor.sln /p:Configuration=Deploy;SolutionName=AppVeyor;ProjectName=TestWeb;OutputPath=C:\inetpub\wwwroot;Platform="AnyCPU"
   -  cmd: cd c:\inetpub\wwwroot
   -  cmd: dir
