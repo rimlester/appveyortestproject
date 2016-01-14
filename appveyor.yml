@@ -1,3 +1,6 @@
+services:
+  -iis
+
 before_build:
   - nuget restore
 
