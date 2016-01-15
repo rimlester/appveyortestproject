@@ -14,4 +14,4 @@ after_build:
  #-  cmd: cmd /c start /wait C:\projects\appveyortestproject\TestWeb\obj\Debug\Package\TestWeb.deploy.cmd
   -  cmd: cd c:\inetpub\wwwroot
   -  cmd: dir
-  -  cmd: C:\Windows\system32\inetsrv\AppCmd.exe start site /site.id:Default Web Site
+  -  cmd: C:\Windows\system32\inetsrv\AppCmd.exe start site /site.name:Default Web Site
