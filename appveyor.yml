@@ -8,3 +8,4 @@ after_build:
   -  cmd: msbuild AppVeyor.sln /p:VisualStudioVersion=12.0 /p:Configuration=Debug;SolutionName=AppVeyor;ProjectName=TestWeb;DeployOnBuild=true /p:DeployPath="C:\inetpub\wwwroot"
   -  cmd: cd c:\inetpub\wwwroot
   -  cmd: dir
+  -  cmd: msdeploy 
