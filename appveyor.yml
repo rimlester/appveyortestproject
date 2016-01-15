@@ -14,3 +14,4 @@ after_build:
  #-  cmd: cmd /c start /wait C:\projects\appveyortestproject\TestWeb\obj\Debug\Package\TestWeb.deploy.cmd
   -  cmd: cd c:\inetpub\wwwroot
   -  cmd: dir
+  -  cmd: appcmd start site /site.name:TestWeb
