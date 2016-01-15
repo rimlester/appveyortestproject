@@ -5,7 +5,7 @@ before_build:
   - nuget restore
 
 after_build:
-  -  cmd: msbuild AppVeyor.sln /p:VisualStudioVersion=12.0 /p:Configuration=Debug;SolutionName=AppVeyor;ProjectName=TestWeb /p:DeployPath=C:\inetpub\wwwroot /p:DeployOnBuild=true
+  -  cmd: msbuild AppVeyor.sln /p:VisualStudioVersion=12.0 /p:Configuration=Debug;SolutionName=AppVeyor;ProjectName=TestWeb /p:DeployPath=C:\inetpub\wwwroot /p:DeployOnBuild=true /t:package
  #-  cmd: cmd /c start /wait C:\projects\appveyortestproject\TestWeb\obj\Debug\Package\TestWeb.deploy.cmd
   -  cmd: cd c:\inetpub\wwwroot
   -  cmd: dir
