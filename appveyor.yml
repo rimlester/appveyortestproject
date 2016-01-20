@@ -4,6 +4,8 @@ services:
 
 before_build:
   - nuget restore
+  - cmd: cd C:\
+  - cmd: dir
   - cmd: C:\projects\appveyortestproject\MakeSQLHappen.bat
 
 after_build:
