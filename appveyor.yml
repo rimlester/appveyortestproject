@@ -16,4 +16,5 @@ after_build:
   -  cmd: dir
   -  cmd: net start w3svc
   -  cmd: C:\Windows\system32\inetsrv\AppCmd.exe list site
+  -  cmd: C:\Windows\system32\inetsrv\AppCmd.exe site /?
   -  cmd: C:\Windows\system32\inetsrv\AppCmd.exe start site /site.name:"Default Web Site"
