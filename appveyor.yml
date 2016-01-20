@@ -11,7 +11,7 @@ after_build:
   -  cmd: echo =====================CONFIG=======================
   -  cmd: type C:\projects\appveyortestproject\TestWeb\obj\Debug\Package\TestWeb.SetParameters.xml
   -  cmd: C:\projects\appveyortestproject\TestWeb\obj\Debug\Package\TestWeb.deploy.cmd /Y
-  -  cmd: cmd /c start /wait C:\projects\appveyortestproject\TestWeb\obj\Debug\Package\TestWeb.deploy.cmd /Y
+ # -  cmd: cmd /c start /wait C:\projects\appveyortestproject\TestWeb\obj\Debug\Package\TestWeb.deploy.cmd /Y
   -  cmd: cd c:\inetpub\wwwroot
   -  cmd: dir
   -  cmd: net start w3svc
