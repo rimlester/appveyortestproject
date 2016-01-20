@@ -1,8 +1,10 @@
 services:
   -iis
+  -mysql
 
 before_build:
   - nuget restore
+  - cmd: C:\projects\appveyortestproject\MakeSQLHappen.bat
 
 after_build:
   -  cmd: msbuild AppVeyor.sln /p:VisualStudioVersion=12.0 /p:Configuration=Debug;SolutionName=AppVeyor;ProjectName=TestWeb /p:DeployPath=C:\inetpub\wwwroot /p:DeployOnBuild=true /t:TestWeb
