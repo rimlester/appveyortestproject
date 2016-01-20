@@ -23,7 +23,7 @@ namespace AppVeyorTest
         public void HelloIsHello()
         {
             var client = new FlurlClient();
-            client.Url = "http://localhost:56874/test";
+            client.Url = "http://localhost:80/test";
             var response = client.GetAsync();
             response.Result.StatusCode.Should().Be(HttpStatusCode.OK);
 
