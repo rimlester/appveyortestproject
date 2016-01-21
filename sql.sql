@@ -2,5 +2,9 @@ CREATE DATABASE test;
 
 USE test;
 
-source C:\projects\edocx-api-region\Binder.API\Foundation\Schema\Migrations\Baseline\Baseline.sql
-\. Baseline.sql
+CREATE TABLE words(
+	Id int,
+	name varchar(255)
+);
+
+select * from words;
