@@ -1,6 +1,6 @@
 services:
-  -iis
-  -mysql
+  - iis
+  - mysql
 
 before_build:
   - nuget restore
@@ -8,14 +8,9 @@ before_build:
 
 after_build:
   -  cmd: msbuild AppVeyor.sln /p:VisualStudioVersion=12.0 /p:Configuration=Debug;SolutionName=AppVeyor;ProjectName=TestWeb /p:DeployPath=C:\inetpub\wwwroot /p:DeployOnBuild=true /t:TestWeb
-  -  cmd: echo =====================SCRIPT=======================
-  -  cmd: type C:\projects\appveyortestproject\TestWeb\obj\Debug\Package\TestWeb.deploy.cmd
-  -  cmd: echo =====================CONFIG=======================
   -  cmd: type C:\projects\appveyortestproject\TestWeb\obj\Debug\Package\TestWeb.SetParameters.xml
   -  cmd: C:\projects\appveyortestproject\TestWeb\obj\Debug\Package\TestWeb.deploy.cmd /Y
  # -  cmd: cmd /c start /wait C:\projects\appveyortestproject\TestWeb\obj\Debug\Package\TestWeb.deploy.cmd /Y
-  -  cmd: cd c:\inetpub\wwwroot
-  -  cmd: dir
   -  cmd: net start w3svc
   -  cmd: C:\Windows\system32\inetsrv\AppCmd.exe list site
   -  cmd: type C:\projects\appveyortestproject\TestWeb\obj\Debug\Package\TestWeb.SetParameters.xml
